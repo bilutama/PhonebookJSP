@@ -1,6 +1,6 @@
 package ru.academits.service;
 
-import ru.academits.PhoneBook;
+import ru.academits.Phonebook;
 import ru.academits.dao.ContactDao;
 import ru.academits.model.Contact;
 import org.apache.commons.lang.StringUtils;
@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class ContactService {
-    private ContactDao contactDao = PhoneBook.contactDao;
+    private ContactDao contactDao = Phonebook.contactDao;
 
     private boolean isExistContactWithPhone(String phone) {
         List<Contact> contactList = contactDao.getAllContacts();
